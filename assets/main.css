@@ -1,0 +1,241 @@
+@charset "UTF-8";
+
+/** Reset some basic elements */
+body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure {
+    margin: 0;
+    padding: 0;
+}
+
+/** Basic styling */
+body {
+    font: normal 16px/1.5 "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    color: #333333;
+    background-color: #F5EFEA;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    -o-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-kerning: normal;
+    word-wrap: break-word;
+    word-break: normal;
+}
+
+/** Set `margin-bottom` to maintain vertical rhythm */
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure {
+    margin-bottom: 15px;
+}
+
+/** Images */
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+/** Figures */
+figure > img {
+    display: block;
+}
+
+figcaption {
+    font-size: 14px;
+}
+
+/** Lists */
+ul, ol {
+    margin-left: 30px;
+}
+
+li > ul, li > ol {
+    margin-bottom: 0;
+}
+
+/** Headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    font-weight: normal;
+}
+
+/** Links */
+a {
+    color: #5C7BB7;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #3d578a;
+}
+
+a:hover {
+    color: #333333;
+}
+
+footer a {
+    color: #908C99;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #333333;
+}
+
+footer a:visited {
+    color: #908C99;
+}
+
+/** Blockquotes */
+blockquote {
+    padding: 30px 15px;
+    font-size: 22px;
+    color: #828282;
+    letter-spacing: -1px;
+    text-align: center;
+}
+
+blockquote p {
+    quotes: "“" "”" "‘" "’";
+    display: inline;
+}
+
+blockquote p:before {
+    content: open-quote;
+}
+
+blockquote p:after {
+    content: close-quote;
+}
+
+blockquote > :last-child {
+    margin-bottom: 0;
+}
+
+/** Code formatting */
+pre, code {
+    font-size: 15px;
+    border: 1px solid #e8dff3;
+    border-radius: 3px;
+    background-color: #F0EAF7;
+    word-wrap: normal;
+    word-break: normal;
+}
+
+code {
+    padding: 1px 5px;
+    font-family: monospace;
+}
+
+pre {
+    padding: 8px 12px;
+    overflow-x: auto;
+}
+
+pre > code {
+    border: 0;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+/** Wrapper */
+.wrapper {
+    max-width: -webkit-calc(1100px - (30px * 2));
+    max-width: calc(1100px - (30px * 2));
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+@media screen and (max-width: 800px) {
+    .wrapper {
+        max-width: -webkit-calc(1100px - (30px));
+        max-width: calc(1100px - (30px));
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+/** Clearfix */
+.wrapper:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/** Icons */
+.icon > svg {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.icon > svg path {
+    fill: #828282;
+}
+
+/** Tables */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+td, th {
+    border: 1px solid #828282;
+    padding: 8px;
+}
+
+thead {
+    background-color: #9c9c9c;
+}
+
+tr:nth-child(even) {
+    background-color: #9c9c9c;
+}
+
+/** Horizontal Rule */
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #C7C6CC;
+    margin: 30px 0;
+    padding: 0;
+}
+
+html, body {
+    background: #F5EFEA;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+body > main {
+    flex: 1;
+}
+
+main {
+    margin: 0 auto;
+    padding: 40px 20px 60px;
+    font-size: 24px;
+    max-width: 568px;
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        padding: 20px 20px 60px;
+        font-size: 20px;
+    }
+}
+
+footer {
+    text-align: center;
+    font-size: 14px;
+    color: #908C99;
+}
+
+/*# sourceMappingURL=main.css.map */
